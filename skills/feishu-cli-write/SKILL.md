@@ -24,11 +24,11 @@ feishu-cli doc create --title "文档标题" --output json
 创建后**必须立即**：
 1. 授予 `full_access` 权限：
    ```bash
-   feishu-cli perm add <document_id> --doc-type docx --member-type email --member-id hepengcheng@bytedance.com --perm full_access --notification
+   feishu-cli perm add <document_id> --doc-type docx --member-type email --member-id user@example.com --perm full_access --notification
    ```
 2. 转移文档所有权：
    ```bash
-   feishu-cli perm transfer-owner <document_id> --doc-type docx --member-type email --member-id hepengcheng@bytedance.com --notification
+   feishu-cli perm transfer-owner <document_id> --doc-type docx --member-type email --member-id user@example.com --notification
    ```
 3. 发送飞书消息通知用户文档已创建
 
